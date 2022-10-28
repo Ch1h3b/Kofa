@@ -21,4 +21,4 @@ python3 manage.py runserver 8080
 ### TODO
 Add purchase geolocation with google maps API.
 
-Customize admin panel.
+Customize staff / admin panels.
