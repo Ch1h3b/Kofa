@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+        {% if lang %}
+        <html dir="rtl" lang="ar">
+        {% else %}
+        <html lang="fr">
+        {% endif %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodia</title>
+    <style>
+        .di{
+            height:auto;
+            max-width: 500px;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            margin: 10px auto;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="di">
+        {% if lang %}
+        <h1>القضية الحالية</h1>
+        {% else %}
+        <h1>Commande en cours</h1>
+        {% endif %}
+        
+        <h3>{{ cmd }}</h3>
+        {% if lang %}
+        <a href="/delete">حذف</a>
+        {% else %}
+        <a href="/delete">Supprimer</a>
+        {% endif %}
+        
+    </div>
+    
+</body>
+</html>

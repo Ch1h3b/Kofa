@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+        {% if lang %}
+        <html dir="rtl" lang="ar">
+        {% else %}
+        <html lang="fr">
+        {% endif %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodia</title>
+    <style>
+        .di{
+            max-width: 500px;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            margin: 10px auto;
+            padding: 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="di">
+        {% if lang %}
+        <h1>قواعد الاستعمال</h1>
+        <p>بلا بلا بلا</p>
+        {% else %}
+        <h1>Regles et agrément</h1>
+        <p>bla bla bla</p>
+        {% endif %}
+        
+    </div>
+    {% if lang %}
+    <div class="di">
+        <a  href="/lang">Français</a>
+    </div>
+    {% else %}
+    <div dir="rtl" class="di">
+        <a  href="/lang">العربية</a>
+    </div>
+    {% endif %}
+</body>
+</html>
